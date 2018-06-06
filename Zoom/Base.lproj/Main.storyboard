@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK8-5P-dzr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloom-blossom-flora-39517" translatesAutoresizingMaskIntoConstraints="NO" id="5gA-FZ-dgi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5gA-FZ-dgi" firstAttribute="height" secondItem="ZK8-5P-dzr" secondAttribute="height" id="LGQ-hS-wWe"/>
+                                    <constraint firstAttribute="bottom" secondItem="5gA-FZ-dgi" secondAttribute="bottom" id="Pew-VQ-ijs"/>
+                                    <constraint firstAttribute="trailing" secondItem="5gA-FZ-dgi" secondAttribute="trailing" id="TRE-du-MpG"/>
+                                    <constraint firstItem="5gA-FZ-dgi" firstAttribute="width" secondItem="ZK8-5P-dzr" secondAttribute="width" id="Z6S-q3-NZx"/>
+                                    <constraint firstItem="5gA-FZ-dgi" firstAttribute="leading" secondItem="ZK8-5P-dzr" secondAttribute="leading" id="x8C-s6-8Vf"/>
+                                    <constraint firstItem="5gA-FZ-dgi" firstAttribute="top" secondItem="ZK8-5P-dzr" secondAttribute="top" id="yRq-Xm-scU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="k7P-Ds-eFb"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZK8-5P-dzr" secondAttribute="trailing" id="8xJ-Ey-Acs"/>
+                            <constraint firstItem="ZK8-5P-dzr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FwP-2c-lPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZK8-5P-dzr" secondAttribute="bottom" id="MEm-cj-SOf"/>
+                            <constraint firstItem="ZK8-5P-dzr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Wib-0l-rCt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Scrollview" destination="ZK8-5P-dzr" id="hTI-w7-d8C"/>
+                        <outlet property="images" destination="5gA-FZ-dgi" id="1dg-cp-Wsg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bloom-blossom-flora-39517" width="1741" height="1160"/>
+    </resources>
+</document>
