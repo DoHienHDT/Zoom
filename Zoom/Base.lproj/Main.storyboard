@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mm4-Od-knN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -49,12 +49,55 @@
                     </view>
                     <connections>
                         <outlet property="Scrollview" destination="ZK8-5P-dzr" id="hTI-w7-d8C"/>
-                        <outlet property="images" destination="5gA-FZ-dgi" id="1dg-cp-Wsg"/>
+                        <outlet property="images" destination="5gA-FZ-dgi" id="lu4-cY-c3Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="100" y="-9"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="TVb-E6-XYn">
+            <objects>
+                <viewController id="mm4-Od-knN" customClass="ViewController2" customModule="Zoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A4v-a7-uNU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOC-Ct-f2C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bloom-blossom-flora-39517" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-yh-KCM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aQd-yh-KCM" firstAttribute="centerY" secondItem="KOC-Ct-f2C" secondAttribute="centerY" id="Edt-jG-F8m"/>
+                                    <constraint firstItem="aQd-yh-KCM" firstAttribute="width" secondItem="KOC-Ct-f2C" secondAttribute="width" id="Eea-9f-gjA"/>
+                                    <constraint firstItem="aQd-yh-KCM" firstAttribute="top" secondItem="KOC-Ct-f2C" secondAttribute="top" id="dOc-XL-VFL"/>
+                                    <constraint firstAttribute="trailing" secondItem="aQd-yh-KCM" secondAttribute="trailing" id="dg1-4S-2pJ"/>
+                                    <constraint firstItem="aQd-yh-KCM" firstAttribute="leading" secondItem="KOC-Ct-f2C" secondAttribute="leading" id="p2H-wC-qN5"/>
+                                    <constraint firstAttribute="bottom" secondItem="aQd-yh-KCM" secondAttribute="bottom" id="riz-vT-0ca"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KOC-Ct-f2C" firstAttribute="leading" secondItem="CwF-yz-wdo" secondAttribute="leading" id="CC3-GS-gMO"/>
+                            <constraint firstItem="CwF-yz-wdo" firstAttribute="bottom" secondItem="KOC-Ct-f2C" secondAttribute="bottom" id="Z1R-lh-pdr"/>
+                            <constraint firstItem="CwF-yz-wdo" firstAttribute="trailing" secondItem="KOC-Ct-f2C" secondAttribute="trailing" id="raq-tb-Lms"/>
+                            <constraint firstItem="KOC-Ct-f2C" firstAttribute="top" secondItem="CwF-yz-wdo" secondAttribute="top" id="yro-xA-uR3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CwF-yz-wdo"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="aQd-yh-KCM" id="xyf-2h-nEp"/>
+                        <outlet property="scroll" destination="KOC-Ct-f2C" id="szb-Fu-Mk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9z-2R-SVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-9"/>
         </scene>
     </scenes>
     <resources>
